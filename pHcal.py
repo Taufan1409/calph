@@ -2,14 +2,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import math
 
-# Coba hapus menu_icon dulu
-selected2 = option_menu(None, ["Asam", "Basa"], 
-                        default_index=0, orientation="horizontal",
-                        styles={
-                            "nav-link": {"font-size": "15px", "text-align": "center"},
-                            "nav-link-selected": {"background-color": "blue"},
-                        })
-
 # Cek apakah streamlit_option_menu terinstall
 try:
     from streamlit_option_menu import option_menu
