@@ -1,6 +1,5 @@
 import streamlit as st
 import math
-pip install streamlit-option-menu
 
 # Coba hapus menu_icon dulu
 selected2 = option_menu(None, ["Asam", "Basa"], 
