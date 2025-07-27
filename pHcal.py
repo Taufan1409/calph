@@ -1,6 +1,14 @@
 import streamlit as st
 import math
 
+# Coba hapus menu_icon dulu
+selected2 = option_menu(None, ["Asam", "Basa"], 
+                        default_index=0, orientation="horizontal",
+                        styles={
+                            "nav-link": {"font-size": "15px", "text-align": "center"},
+                            "nav-link-selected": {"background-color": "blue"},
+                        })
+
 # Cek apakah streamlit_option_menu terinstall
 try:
     from streamlit_option_menu import option_menu
@@ -121,7 +129,7 @@ if menu == "Beranda":
     """)
 
 elif menu == "Hitung pH":
-    st.title(":blue[Kalkulator pH Larutan]")
+    st.title("Kalkulator pH Larutan")
     st.subheader("Menghitung pH Larutan Asam dan Basa")
 
     # Submenu utama untuk tipe larutan asam atau basa
